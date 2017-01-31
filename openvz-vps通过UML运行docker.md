@@ -27,7 +27,7 @@ cd linux-4.8.15
 下载我的内核配置文件
 
 ```
-wget https://gist.githubusercontent.com/xdtianyu/e471032efc8a80277652b56ff6ae5459/raw/a9b39309bc311305dde7e93ac2bc2ae3696d38f4/kernel-4.8.15-uml.config -O .config
+wget https://raw.githubusercontent.com/xdtianyu/Docs/master/kernel-4.8.15-uml.config -O .config
 ```
 
 运行 `menuconfig`，按你的需要修改，按两次 `ESC` 退出
