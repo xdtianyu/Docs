@@ -32,7 +32,7 @@ arukas 的优点是服务器在日本樱花，延时很低，速度也很不错�
 
 其中 `Image` 是托管在 [https://hub.docker.com/](https://hub.docker.com/) 的镜像文件，所以可以很方便的部署应用。
 
-docker1
+![docker1](https://github.com/xdtianyu/Docs/raw/master/art/docker1.png)
 
 应用启动后即可通过入口访问 `https://matrix-test.arukascloud.io/` docker 服务，其中 `https://matrix-test.arukascloud.io/ttyd` (root:root) 可以用来登录 docker 系统 (su - (root))。
 
@@ -188,6 +188,8 @@ OpenShift 是由 RedHat 提供的老牌 PaaS 服务，在再次改版之后只�
 后台 [https://console.preview.openshift.com/console/](https://console.preview.openshift.com/console/)
 
 首先登录后台创建一个项目，之后点击 `Add to project`， 选择 `Deploy Image`， 选择 `Image name`，输入 `xdtianyu/docker:openshift` 点击搜索，输入名称例如 `matrix-test`，点击 `Create` 创建应用。
+
+![docker2](https://github.com/xdtianyu/Docs/raw/master/art/docker2.png)
 
 点击 `Continue to overview` 查看部署进度，等待几分钟部署完成后，点击 `Create Route`，修改 `Target Port` 为 `8080->8080`，选中 `Secure route`，点击 `Create` 创建。
 
