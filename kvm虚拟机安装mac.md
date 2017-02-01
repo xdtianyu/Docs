@@ -54,35 +54,54 @@ virsh start mac2
 
 使用 webvirtmgr 的 novnc 安装系统，或者使用 `netstat -natp|grep 590` 命令查看 mac2 vnc 监听的端口，使用 vnc 远程工具安装系统。
 
-mac1 
+![mac1](https://github.com/xdtianyu/Docs/raw/master/art/mac1.png)
 
 敲击回车，等待引导加载完成后进入安装界面。
 
-mac2
+![mac2](https://github.com/xdtianyu/Docs/raw/master/art/mac2.png)
 
 这时候如果虚拟机内的鼠标和外部的不对应有延时，可以使用快速移动鼠标，利用虚拟机内的鼠标惯性移动到目标位置。安装完成后会安装鼠标驱动修复这个问题。
 
 按TAB移动选择项，按空格选择项目。
 
-mac5
+![mac5](https://github.com/xdtianyu/Docs/raw/master/art/mac5.png)
 
 使用硬盘工具对虚拟机硬盘进行分区
 
-mac7
+![mac7](https://github.com/xdtianyu/Docs/raw/master/art/mac7.png)
 
 分区完成后打开终端，复制文件 
 
 ```shell
 cp -av /Extra /Volumes/KVMDisk
 ```
+![mac8](https://github.com/xdtianyu/Docs/blob/master/art/mac8.png)
+
+![mac9](https://github.com/xdtianyu/Docs/blob/master/art/mac9.png)
 
 在菜单栏中退出终端后会弹出之前的安装界面，选择安装到 `KVMDisk`，等待安装完成。
+
+![mac11](https://github.com/xdtianyu/Docs/raw/master/art/mac11.png)
+
+![mac12](https://github.com/xdtianyu/Docs/raw/master/art/mac12.png)
+
+![mac13](https://github.com/xdtianyu/Docs/raw/master/art/mac13.png)
+
+![mac14](https://github.com/xdtianyu/Docs/raw/master/art/mac14.png)
+
+![mac15](https://github.com/xdtianyu/Docs/raw/master/art/mac15.png)
+
+![mac16](https://github.com/xdtianyu/Docs/raw/master/art/mac16.png)
 
 **5\.安装 tablet-usb 驱动**
 
 参考 [http://philjordan.eu/osx-virt/](http://philjordan.eu/osx-virt/)
 
 在 mac 虚拟机里打开 `http://philjordan.eu/osx-virt/` 并下载 `http://philjordan.eu/osx-virt/binaries/QemuUSBTablet-1.2.pkg` 文件安装。
+
+![mac18](https://github.com/xdtianyu/Docs/raw/master/art/mac18.png)
+
+![mac19](https://github.com/xdtianyu/Docs/raw/master/art/mac19.png)
 
 关闭虚拟机，修改 xml 文件
 
